@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PostDetail = () => {
+const PostDetail: React.FunctionComponent = () => {
   return <div>PostDetail</div>;
 };
 
