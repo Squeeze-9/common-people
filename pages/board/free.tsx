@@ -1,8 +1,8 @@
 import React from 'react';
 import AppLayout from '../../components/AppLayout';
 
-const HotBoard: React.FunctionComponent = () => {
+const FreeBoard: React.FunctionComponent = () => {
   return <AppLayout>Hot Post</AppLayout>;
 };
 
-export default HotBoard;
+export default FreeBoard;
