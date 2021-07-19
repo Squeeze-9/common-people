@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "yarn run relay && next dev",
+    "build": "yarn run relay && next build",
+    "start": "yarn run relay && next start",
+    "lint": "yarn run relay && next lint",
+    "generate:relay": "relay-compiler",
+    "relay": "yarn run relay-compiler --schema ./data/schema.graphql --src ./src/ --watchman false $@"
   },
   "dependencies": {
     "next": "11.0.1",
