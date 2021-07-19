@@ -1,7 +1,8 @@
 import React from 'react';
+import AppLayout from '../components/AppLayout';
 
 const Post: React.FunctionComponent = () => {
-  return <div>Post</div>;
+  return <AppLayout>Post</AppLayout>;
 };
 
 export default Post;
