@@ -11,10 +11,12 @@
     "relay": "yarn run relay-compiler --schema ./data/schema.graphql --src ./src/ --watchman false $@"
   },
   "dependencies": {
+    "@types/react-relay": "^11.0.2",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-relay": "^11.0.2",
+    "relay-nextjs": "^0.4.0",
     "relay-runtime": "^11.0.2"
   },
   "devDependencies": {
