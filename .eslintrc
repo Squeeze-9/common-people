@@ -19,5 +19,20 @@
     "es6": true
   },
   "plugins": ["import", "react-hooks"],
-  "rules": {}
+  "rules": {
+    "no-console": "warn",
+    "no-debugger": "error",
+    "array-callback-return": "warn",
+    "default-case": "error",
+    "eqeqeq": "warn",
+    "dot-location": "warn",
+    "no-implicit-globals": "error",
+    "require-await": "error",
+    "camelcase": "warn",
+    "block-spacing": "error",
+    "no-trailing-spaces": "warn",
+    "arrow-spacing": "error",
+    "prefer-arrow-callback": "warn",
+    "prefer-const": "error"
+  }
 }
