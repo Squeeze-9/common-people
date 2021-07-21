@@ -1,7 +1,17 @@
+import { useRouter } from 'next/router';
 import React from 'react';
 
 const PostDetail: React.FunctionComponent = () => {
-  return <div>PostDetail</div>;
+  const {
+    query: { postId },
+  } = useRouter();
+
+  return (
+    <div>
+      <h1>PostDetail</h1>
+      <p>{postId}</p>
+    </div>
+  );
 };
 
 export default PostDetail;

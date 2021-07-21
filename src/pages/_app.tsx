@@ -1,10 +1,10 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import '../../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { RelayEnvironmentProvider } from 'react-relay/hooks';
 import { getInitialPreloadedQuery, getRelayProps } from 'relay-nextjs/app';
 import { getClientEnvironment } from '../lib/relay_client_environment';
-import Loading from '../components/Loading';
+// import Loading from '../components/Loading';
 
 // const Environment = createNewEnvironment();
 const clientEnv = getClientEnvironment();
@@ -18,9 +18,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   return (
     <RelayEnvironmentProvider environment={environment}>
-      <Suspense fallback={Loading}>
-        <Component {...pageProps} />;
-      </Suspense>
+      <Component {...pageProps} />
     </RelayEnvironmentProvider>
   );
 };

@@ -6,6 +6,8 @@ type AppLayoutProps = {
 };
 
 const AppLayout = ({ children }: AppLayoutProps) => {
+  // console.log(children);
+  // console.log(typeof children);
   return (
     <div>
       <Link href="/">
