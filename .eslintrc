@@ -27,7 +27,7 @@
     "eqeqeq": "warn",
     "dot-location": "warn",
     "no-implicit-globals": "error",
-    "require-await": "error",
+    "require-await": "off",
     "camelcase": "warn",
     "block-spacing": "error",
     "no-trailing-spaces": "warn",
