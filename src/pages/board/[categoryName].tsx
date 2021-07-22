@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import React from 'react';
-import AppLayout from '../../components/AppLayout';
+import AppLayout from '../../components/layout/AppLayout';
 
 const CategorizedBoard: React.FunctionComponent = () => {
   const {

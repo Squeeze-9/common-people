@@ -1,5 +1,5 @@
 import React from 'react';
-import AppLayout from '../components/AppLayout';
+import AppLayout from '../components/layout/AppLayout';
 // import Head from 'next/head';
 // import Image from 'next/image';
 // import styles from '../styles/Home.module.css';
