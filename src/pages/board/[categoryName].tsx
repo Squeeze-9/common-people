@@ -1,11 +1,13 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 import AppLayout from '../../components/layout/AppLayout';
+// import { GetStaticProps, GetStaticPropsContext } from 'next';
 
 const CategorizedBoard: React.FunctionComponent = () => {
   const {
     query: { categoryName },
   } = useRouter();
+  console.log('nothing categoryname');
 
   return (
     <AppLayout>
@@ -16,5 +18,14 @@ const CategorizedBoard: React.FunctionComponent = () => {
     </AppLayout>
   );
 };
+
+// export const getStaticProps: GetStaticProps = async (
+//   context: GetStaticPropsContext
+// ) => {
+//   console.log(context);
+//   return {
+//     props: {},
+//   };
+// };
 
 export default CategorizedBoard;

@@ -6,6 +6,7 @@ const PostDetail: React.FunctionComponent = () => {
   const {
     query: { postId },
   } = useRouter();
+  console.log('serverside postDetail');
 
   return (
     <div>
