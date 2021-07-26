@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "postId": "post1",
+      "author": "Author 1",
+      "title": "Title 1",
+      "description": "Description 1",
+      "comments": ["Comment Id 1-1", "Comment Id 1-2", "Comment Id 1-3"],
+      "likeCount": 5,
+      "dislikeCount": 3,
+      "viewCount": 10
+    },
+    {
+      "postId": "post2",
+      "author": "Author 2",
+      "title": "Title 2",
+      "description": "Description 2",
+      "comments": ["Comment Id 2-1", "Comment Id 2-2", "Comment Id 2-3"],
+      "likeCount": 3,
+      "dislikeCount": 1,
+      "viewCount": 6
+    }
+  ],
+  "users": [
+    {
+      "userId": "User 1",
+      "id": "aaaa111",
+      "email": "user1@gmail.com",
+      "posts": ["post1"],
+      "comments": ["Comment Id 1-1", "Comment Id 2-1"]
+    },
+    {
+      "userId": "User 2",
+      "id": "bbbb2222",
+      "email": "user2@gmail.com",
+      "posts": ["post2"],
+      "comments": ["Comment Id 1-2", "Comment Id 2-2"]
+    },
+    {
+      "userId": "User 3",
+      "id": "cccc333",
+      "email": "user3@gmail.com",
+      "posts": [],
+      "comments": ["Comment Id 1-3", "Comment Id 2-3"]
+    }
+  ],
+  "comments": [
+    {
+      "commentId": "Comment Id 1-1",
+      "description": "Comment Description 1",
+      "author": "User 1",
+      "anonymous": true,
+      "postId": "post1",
+      "likeCount": 5,
+      "dislikeCount": 1
+    }
+  ]
+}

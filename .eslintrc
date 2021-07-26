@@ -33,6 +33,7 @@
     "no-trailing-spaces": "warn",
     "arrow-spacing": "error",
     "prefer-arrow-callback": "warn",
-    "prefer-const": "error"
+    "prefer-const": "error",
+    "react/prop-types": 0
   }
 }
