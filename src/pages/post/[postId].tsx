@@ -2,17 +2,8 @@ import { GetServerSideProps } from 'next';
 import React from 'react';
 import fs from 'fs/promises';
 import path from 'path';
-
-type Post = {
-  postId: string;
-  author: string;
-  title: string;
-  description: string;
-  comments: [string];
-  likeCount: number;
-  dislikeCount: number;
-  viewCount: number;
-};
+import type { Post } from '../../types/post';
+import AppLayout from '../../components/layout/AppLayout';
 
 type PostDetailProps = {
   post: Post;
@@ -29,20 +20,22 @@ const PostDetail: React.FC<PostDetailProps> = ({ post }) => {
   } = post;
 
   return (
-    <div>
-      <h1>PostDetail</h1>
-      <h2>제목: {title}</h2>
-      <p>내용: {description}</p>
-      <p>
-        댓글:
-        {comments.map((comment, index) => (
-          <span key={index}>{comment}</span>
-        ))}
-      </p>
-      <p>조회 수: {viewCount}</p>
-      <p>좋아요 수: {likeCount}</p>
-      <p>싫어요 수: {dislikeCount}</p>
-    </div>
+    <AppLayout>
+      <div>
+        <h1>PostDetail</h1>
+        <h2>제목: {title}</h2>
+        <p>내용: {description}</p>
+        <p>
+          댓글:
+          {comments.map((comment, index) => (
+            <span key={index}>{comment}</span>
+          ))}
+        </p>
+        <p>조회 수: {viewCount}</p>
+        <p>좋아요 수: {likeCount}</p>
+        <p>싫어요 수: {dislikeCount}</p>
+      </div>
+    </AppLayout>
   );
 };
 

@@ -8,7 +8,8 @@
       "comments": ["Comment Id 1-1", "Comment Id 1-2", "Comment Id 1-3"],
       "likeCount": 5,
       "dislikeCount": 3,
-      "viewCount": 10
+      "viewCount": 10,
+      "category": "free"
     },
     {
       "postId": "post2",
@@ -18,7 +19,8 @@
       "comments": ["Comment Id 2-1", "Comment Id 2-2", "Comment Id 2-3"],
       "likeCount": 3,
       "dislikeCount": 1,
-      "viewCount": 6
+      "viewCount": 6,
+      "category": "hot"
     }
   ],
   "users": [
